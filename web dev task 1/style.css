@@ -17,7 +17,7 @@ body {
     background-color: white;
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(255, 7, 201, 0.8);
     width: 300px;
 
 }
@@ -47,8 +47,20 @@ input {
     border-radius: 4px;
 }
 
+input:hover {
+    border-color: rgb(114, 247, 6);
+    box-shadow: 0 0 8px rgb(33, 150, 243);
+}
+
+
 button:hover {
     background-color: rgb(2, 180, 2);
     box-shadow: 0 0 15px rgba(255, 2, 2, 0.9);
-    transform: scale(1.07);
+    transform: scale(1.09);
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
