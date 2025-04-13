@@ -79,3 +79,47 @@ form {
 .navbar-toggler:hover {
   transform: scale(1.1);
 }
+
+/* -------------might be changed later------------ */
+/* Custom styles for edit and delete buttons */
+.edit-task {
+  background-color: #f39c12; /* Yellow */
+  border: none;
+}
+
+.edit-task:hover {
+  background-color: #00FFFF;
+}
+
+.delete-task {
+  background-color: #e74c3c; 
+  border: none;
+}
+
+.delete-task:hover {
+  background-color: #00FFFF;
+}
+
+/* Card styling */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(150, 253, 6, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card button {
+  margin-top: 10px;
+  margin-right: 5px;
+}
