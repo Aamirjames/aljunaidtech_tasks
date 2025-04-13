@@ -1,115 +1,77 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Registration Form Validation
-    const registerForm = document.getElementById("registerForm");
-    if (registerForm) {
-        registerForm.addEventListener("submit", function (event) {
-            event.preventDefault();
+    // ------------------ To-Do List Functionality ------------------
 
-            let fullName = document.getElementById("fullName").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let password = document.getElementById("password").value;
-            let confirmPassword = document.getElementById("confirmPassword").value;
+    const taskForm = document.getElementById("taskForm");
+    const taskTitleInput = document.getElementById("taskTitle");
+    const taskDescInput = document.getElementById("taskDesc");
+    const taskList = document.getElementById("taskList");
 
-            if (fullName === "" || email === "" || password === "" || confirmPassword === "") {
-                showAlert("All fields are required!", "error");
+    if (taskForm && taskTitleInput && taskDescInput && taskList) {
+        // Load tasks from localStorage on page load
+        loadTasks();
+
+        // Add Task
+        taskForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const title = taskTitleInput.value.trim();
+            const desc = taskDescInput.value.trim();
+
+            if (title === "" || desc === "") {
+                showAlert("Please fill in both title and description.", "error");
                 return;
             }
 
-            if (!validateEmail(email)) {
-                showAlert("Please enter a valid email address!", "error");
-                return;
-            }
+            const task = {
+                id: Date.now(),
+                title,
+                desc
+            };
 
-            if (password.length < 6) {
-                showAlert("Password must be at least 6 characters long!", "error");
-                return;
-            }
-
-            if (password !== confirmPassword) {
-                showAlert("Passwords do not match!", "error");
-                return;
-            }
-
-            Swal.fire("Success!", "Registration successful!", "success");
-            registerForm.reset();
+            saveTask(task);
+            displayTask(task);
+            taskForm.reset();
         });
     }
 
-    // Login Form Validation
-    const loginForm = document.getElementById("loginForm");
-    if (loginForm) {
-        loginForm.addEventListener("submit", function (event) {
-            event.preventDefault();
+    function saveTask(task) {
+        let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        tasks.push(task);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
 
-            let email = document.getElementById("email").value.trim();
-            let password = document.getElementById("password").value;
+    function loadTasks() {
+        const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        tasks.forEach(displayTask);
+    }
 
-            if (email === "" || password === "") {
-                showAlert("Please fill out all fields!", "error");
-                return;
-            }
+    function displayTask(task) {
+        const col = document.createElement("div");
+        col.className = "col-md-4";
+        col.innerHTML = `
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">${task.title}</h5>
+                    <p class="card-text">${task.desc}</p>
+                    <button class="btn btn-danger btn-sm delete-task" data-id="${task.id}">Delete</button>
+                </div>
+            </div>
+        `;
+        taskList.appendChild(col);
 
-            if (!validateEmail(email)) {
-                showAlert("Please enter a valid email address!", "error");
-                return;
-            }
-
-            Swal.fire("Success!", "Login successful!", "success");
-            loginForm.reset();
+        // Add delete event
+        const deleteBtn = col.querySelector(".delete-task");
+        deleteBtn.addEventListener("click", function () {
+            deleteTask(task.id, col);
         });
     }
 
-    // Email Validation Function
-    function validateEmail(email) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailPattern.test(email);
+    function deleteTask(id, element) {
+        let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        tasks = tasks.filter(task => task.id !== id);
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        element.remove();
     }
 
-    // Function to Show Alerts
-    function showAlert(message, type) {
-        Swal.fire({
-            icon: type,
-            title: message,
-            showConfirmButton: false,
-            timer: 2000
-        });
-    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Contact Us Form Validation
-    const contactForm = document.getElementById("contactForm");
-    if (contactForm) {
-        contactForm.addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let name = document.getElementById("name").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let subject = document.getElementById("subject").value.trim();
-            let message = document.getElementById("message").value.trim();
-
-            if (name === "" || email === "" || subject === "" || message === "") {
-                showAlert("All fields are required!", "error");
-                return;
-            }
-
-            if (!validateEmail(email)) {
-                showAlert("Please enter a valid email address!", "error");
-                return;
-            }
-
-            Swal.fire("Thank You!", "Your message has been sent successfully.", "success");
-            contactForm.reset();
-        });
-    }
-
-    // Email Validation Function
-    function validateEmail(email) {
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailPattern.test(email);
-    }
-
-    // Function to Show Alerts
     function showAlert(message, type) {
         Swal.fire({
             icon: type,
