@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 updateTaskInStorage(editingTask);
                 updateTaskInUI(editingTask);
                 editingTask = null; // Clear editing task
+
+                // ✅ Revert button back to "Add Task"
+                taskForm.querySelector("button").innerHTML = '<i class="fas fa-plus"></i> Add Task';
             } else {
                 // If adding a new task
                 const task = {
@@ -102,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Remove the task element from the DOM
         element.remove();
     }
-    
 
     function editTask(task, element) {
         // Populate form with current task data
@@ -126,6 +128,102 @@ document.addEventListener("DOMContentLoaded", function () {
         const taskCard = document.querySelector(`.card[data-id='${updatedTask.id}']`);
         taskCard.querySelector(".card-title").textContent = updatedTask.title;
         taskCard.querySelector(".card-text").textContent = updatedTask.desc;
+    }
+
+    // ------------------ Registration Form Validation ------------------
+
+    const registerForm = document.getElementById("registerForm");
+    if (registerForm) {
+        registerForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let fullName = document.getElementById("fullName").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (fullName === "" || email === "" || password === "" || confirmPassword === "") {
+                showAlert("All fields are required!", "error");
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                showAlert("Please enter a valid email address!", "error");
+                return;
+            }
+
+            if (password.length < 6) {
+                showAlert("Password must be at least 6 characters long!", "error");
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                showAlert("Passwords do not match!", "error");
+                return;
+            }
+
+            Swal.fire("Success!", "Registration successful!", "success");
+            registerForm.reset();
+        });
+    }
+
+    // ------------------ Login Form Validation ------------------
+
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+
+            if (email === "" || password === "") {
+                showAlert("Please fill out all fields!", "error");
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                showAlert("Please enter a valid email address!", "error");
+                return;
+            }
+
+            Swal.fire("Success!", "Login successful!", "success");
+            loginForm.reset();
+        });
+    }
+
+    // ------------------ Contact Us Form Validation ------------------
+
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let subject = document.getElementById("subject").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            if (name === "" || email === "" || subject === "" || message === "") {
+                showAlert("All fields are required!", "error");
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                showAlert("Please enter a valid email address!", "error");
+                return;
+            }
+
+            Swal.fire("Thank You!", "Your message has been sent successfully.", "success");
+            contactForm.reset();
+        });
+    }
+
+    // ------------------ Shared Utility Functions ------------------
+
+    function validateEmail(email) {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
     }
 
     function showAlert(message, type) {
