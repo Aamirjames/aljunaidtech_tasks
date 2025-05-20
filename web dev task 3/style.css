@@ -1,0 +1,125 @@
+
+body {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  background: url(bg-image.jpg) no-repeat center center fixed ;
+  background-size: cover;   
+}
+
+.navbar {
+  padding: 15px;
+  color: #0A0F24;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue !important;
+  text-shadow: 0 0 8px #65f802, 0 0 12px #f80202, 0 0 17px #f8f802, 0 0 20px #00ffe1;
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+
+
+footer {
+  background-color: #343a40;
+  padding: 15px;
+  margin-bottom: 0px;
+  justify-items: center;
+}
+
+
+h1, h2, strong { 
+  color: #b0f4f4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+form {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-color: #00FFFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(29, 234, 6, 0.7);
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  width: 135px;
+  color: #007BFF
+  text-color white
+}
+
+.btn-primary:hover {
+  background-color: #00FFFF
+}
+
+
+.btn:hover {
+  transform: scale(1.07);
+  color: rgb(253, 6, 6);
+}
+
+.navbar-toggler:hover {
+  transform: scale(1.1);
+}
+
+/* -------------might be changed later------------ */
+/* Custom styles for edit and delete buttons */
+.edit-task {
+  background-color: #f39c12; /* Yellow */
+  border: none;
+}
+
+.edit-task:hover {
+  background-color: #00FFFF;
+}
+
+.delete-task {
+  background-color: #e74c3c; 
+  border: none;
+}
+
+.delete-task:hover {
+  background-color: #00FFFF;
+}
+
+/* Card styling */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(150, 253, 6, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card button {
+  margin-top: 10px;
+  margin-right: 5px;
+}
