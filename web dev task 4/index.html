@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AK Developer - Full Stack Developer & Web Designer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/js/main.js" as="script">
+</head>
+
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">AK Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#hero" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Our Clients</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section reveal-on-scroll" id="hero" aria-label="Introduction">
+            <div class="container">
+                <h1 class="hero-title">Hi, I'm Aamir Khan</h1>
+                <p class="hero-subtitle">Full Stack Developer & Web Designer</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-cta" role="button">Get Started</a>
+                    <a href="#about" class="btn btn-outline-light btn-cta" role="button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section reveal-on-scroll" id="about" aria-label="About Us">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img data-src="assets/images/portfolio_image3.png" alt="Aamir Khan working on web development"
+                            class="about-img" loading="lazy">
+                    </div>
+                    <div class="col-md-6">
+                        <h2>About Us</h2>
+                        <p>We are a creative agency with a passion for design and innovation. Our mission is to help
+                            businesses grow with beautiful and functional websites.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section reveal-on-scroll" id="services" style="background:#f8f9fa;"
+            aria-label="Our Services">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Services</h2>
+                <div class="row g-4">
+                    <!-- Service cards with improved accessibility -->
+                    <div class="col-md-4">
+                        <div class="service-card" role="article">
+                            <i class="bi bi-code-slash service-icon" aria-hidden="true"></i>
+                            <h3>Web Development</h3>
+                            <p>Custom web development solutions using the latest technologies and best practices.</p>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-palette service-icon"></i>
+                            <h3>UI/UX Design</h3>
+                            <p>Creating beautiful and intuitive user interfaces that enhance user experience.</p>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-phone service-icon"></i>
+                            <h3>Mobile Development</h3>
+                            <p>Building responsive and native mobile applications for iOS and Android platforms.</p>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-graph-up service-icon"></i>
+                            <h3>Digital Marketing</h3>
+                            <p>Comprehensive digital marketing strategies to grow your online presence.</p>
+                        </div>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-gear service-icon"></i>
+                            <h3>SEO Optimization</h3>
+                            <p>Improving your website's visibility in search engines and driving organic traffic.</p>
+                        </div>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-cloud-upload service-icon"></i>
+                            <h3>Cloud Solutions</h3>
+                            <p>Cloud infrastructure setup and management for scalable applications.</p>
+                        </div>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-shield-check service-icon"></i>
+                            <h3>Cyber Security</h3>
+                            <p>Protecting your digital assets with advanced security measures and best practices.</p>
+                        </div>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-camera service-icon"></i>
+                            <h3>Content Creation</h3>
+                            <p>Professional content creation services for your digital marketing needs.</p>
+                        </div>
+                    </div>
+                    <!-- Service 9 -->
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <i class="bi bi-headset service-icon"></i>
+                            <h3>24/7 Support</h3>
+                            <p>Round-the-clock technical support and maintenance for your projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section reveal-on-scroll" id="portfolio" aria-label="Portfolio">
+            <div class="container">
+                <h2>Our Portfolio</h2>
+                <div class="filter-btns" role="group" aria-label="Portfolio filters">
+                    <button class="btn btn-outline-primary active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="btn btn-outline-primary" data-filter="web" aria-pressed="false">Web</button>
+                    <button class="btn btn-outline-primary" data-filter="design" aria-pressed="false">Design</button>
+                    <button class="btn btn-outline-primary" data-filter="app" aria-pressed="false">App</button>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Portfolio items with improved accessibility -->
+                    <div class="col-md-4 portfolio-item web active" role="article">
+                        <div class="card">
+                            <img src="assets/images/our_projects/project_1.jpg" class="card-img-top"
+                                alt="Web Project 1 screenshot" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Project 1</h5>
+                                <a href="project-details.html#web-project-1" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="col-md-4 portfolio-item design active">
+                        <div class="card">
+                            <img src="assets/images/our_projects/project_2.jpg" class="card-img-top" alt="Design Project">
+                            <div class="card-body">
+                                <h5 class="card-title">Design Work</h5>
+                                <a href="project-details.html#design-work" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="col-md-4 portfolio-item app active">
+                        <div class="card">
+                            <img src="assets/images/our_projects/project_3.jpg" class="card-img-top" alt="Mobile App Project">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile App</h5>
+                                <a href="project-details.html#mobile-app" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4 -->
+                    <div class="col-md-4 portfolio-item web active">
+                        <div class="card">
+                            <img src="assets/images/our_projects/project_4.jpg" class="card-img-top" alt="Web Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Project 2</h5>
+                                <a href="project-details.html#web-project-2" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5 -->
+                    <div class="col-md-4 portfolio-item design active">
+                        <div class="card">
+                            <img src="assets/images/our_projects/project_5.jpg" class="card-img-top" alt="Logo Design Project">
+                            <div class="card-body">
+                                <h5 class="card-title">Logo Design</h5>
+                                <a href="project-details.html#logo-design" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6 -->
+                    <div class="col-md-4 portfolio-item app active">
+                        <div class="card">
+                            <img src="assets/images/our_projects/project_6.jpg" class="card-img-top" alt="iOS App Project">
+                            <div class="card-body">
+                                <h5 class="card-title">iOS App</h5>
+                                <a href="project-details.html#ios-app" class="btn btn-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------------------- blog listing section ------------------------->
+        <!-- Blog Section -->
+        <section class="blog-section py-5" id="blog">
+            <div class="container">
+                <h2 class="text-center mb-5">Latest Blog Posts</h2>
+
+                <!-- Blog Filters -->
+                <div class="text-center mb-4">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-primary active" data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="news">News</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="tech">Technology</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="design">Design</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="tips">Tips & Tricks</button>
+                    </div>
+                </div>
+
+                <!-- Blog Cards -->
+                <div class="row g-4" id="blogCards">
+                    <!-- Blog Card 1 -->
+                    <div class="col-md-4 blog-item" data-category="tech">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_1.jpg" class="card-img-top"
+                                alt="The Future of Web Development">
+                            <div class="card-body">
+                                <h5 class="card-title">The Future of Web Development</h5>
+                                <p class="card-text">Exploring upcoming trends and technologies in web development...
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">5 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 2 -->
+                    <div class="col-md-4 blog-item" data-category="design">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_2.jpg" class="card-img-top"
+                                alt="UI Design Best Practices">
+                            <div class="card-body">
+                                <h5 class="card-title">UI Design Best Practices</h5>
+                                <p class="card-text">Essential UI design principles for creating engaging interfaces...
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">7 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 3 -->
+                    <div class="col-md-4 blog-item" data-category="news">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_3.jpg" class="card-img-top"
+                                alt="Latest Tech News Roundup">
+                            <div class="card-body">
+                                <h5 class="card-title">Latest Tech News Roundup</h5>
+                                <p class="card-text">Stay updated with the latest happenings in the tech world...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">3 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 4 -->
+                    <div class="col-md-4 blog-item" data-category="tips">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_4.jpg" class="card-img-top"
+                                alt="Productivity Tips for Developers">
+                            <div class="card-body">
+                                <h5 class="card-title">Productivity Tips for Developers</h5>
+                                <p class="card-text">Boost your productivity with these essential developer tips...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">6 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 5 -->
+                    <div class="col-md-4 blog-item" data-category="tech">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_5.jpg" class="card-img-top"
+                                alt="Getting Started with React">
+                            <div class="card-body">
+                                <h5 class="card-title">Getting Started with React</h5>
+                                <p class="card-text">A comprehensive guide to starting with React development...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">8 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 6 -->
+                    <div class="col-md-4 blog-item" data-category="design">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_6.jpg" class="card-img-top"
+                                alt="Color Theory in Web Design">
+                            <div class="card-body">
+                                <h5 class="card-title">Color Theory in Web Design</h5>
+                                <p class="card-text">Understanding color psychology and its impact on web design...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">4 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 7 -->
+                    <div class="col-md-4 blog-item" data-category="news">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_7.jpg" class="card-img-top" alt="AI in Web Development">
+                            <div class="card-body">
+                                <h5 class="card-title">AI in Web Development</h5>
+                                <p class="card-text">How artificial intelligence is transforming web development...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">5 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 8 -->
+                    <div class="col-md-4 blog-item" data-category="tips">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_8.jpg" class="card-img-top" alt="Debug Like a Pro">
+                            <div class="card-body">
+                                <h5 class="card-title">Debug Like a Pro</h5>
+                                <p class="card-text">Advanced debugging techniques for web developers...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">7 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 9 -->
+                    <div class="col-md-4 blog-item" data-category="tech">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_9.jpg" class="card-img-top"
+                                alt="Modern JavaScript Features">
+                            <div class="card-body">
+                                <h5 class="card-title">Modern JavaScript Features</h5>
+                                <p class="card-text">Exploring the latest features in JavaScript ES2022...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">6 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 10 -->
+                    <div class="col-md-4 blog-item" data-category="design">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_10.jpg" class="card-img-top"
+                                alt="Responsive Design Patterns">
+                            <div class="card-body">
+                                <h5 class="card-title">Responsive Design Patterns</h5>
+                                <p class="card-text">Common responsive design patterns and when to use them...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">4 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 11 -->
+                    <div class="col-md-4 blog-item" data-category="news">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_11.jpg" class="card-img-top" alt="Web Security Updates">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Security Updates</h5>
+                                <p class="card-text">Latest security practices and updates in web development...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">5 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog Card 12 -->
+                    <div class="col-md-4 blog-item" data-category="tips">
+                        <div class="card h-100">
+                            <img src="assets/images/blog/blog_12.jpg" class="card-img-top"
+                                alt="Code Review Best Practices">
+                            <div class="card-body">
+                                <h5 class="card-title">Code Review Best Practices</h5>
+                                <p class="card-text">Essential tips for effective code review processes...</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">6 mins read</small>
+                                    <a href="blog-details.html" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" onclick="showNoMorePosts(event)">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" onclick="showNoMorePosts(event)">3</a>
+                        </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section py-5" id="faqs">
+            <div class="container">
+                <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1">
+                                How can I read full blog posts?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                To read the full post, click on the "View" button under any blog card, and it will open
+                                the full blog content on a separate page.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2">
+                                How can I access live demos of portfolio projects?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Each portfolio project includes a link to the live demo on the project card. Click
+                                "View" to access the live site.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3">
+                                How can I contact the developer?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact the developer via the contact form in the "Contact" section or by
+                                reaching out via social media links in the footer.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq4">
+                                What technologies do you use for development?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We use modern web technologies including HTML5, CSS3, JavaScript, React, Node.js, and
+                                other cutting-edge tools to deliver the best results.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq5">
+                                Do you offer maintenance services?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we offer ongoing maintenance and support services to ensure your website stays
+                                up-to-date and performs optimally.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section py-5 bg-light" id="testimonials">
+            <div class="container">
+                <h2 class="text-center mb-5">What Our Clients Say</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="text-center">
+                                        <img src="assets/images/fceo1.webp" class="rounded-circle mb-4" alt="Client"
+                                            style="width: 64px; height: 64px; object-fit: cover;">
+                                        <p class="lead mb-4">"Working with this team was an absolute pleasure. They
+                                            delivered our project on time and exceeded our expectations. Their attention
+                                            to detail and creative solutions made all the difference."</p>
+                                        <h5>Sarah Johnson</h5>
+                                        <p class="text-muted">CEO, Tech Solutions Inc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="text-center">
+                                        <img src="assets/images/ceo1.jpg" class="rounded-circle mb-4" alt="Client"
+                                            style="width: 64px; height: 64px; object-fit: cover;">
+                                        <p class="lead mb-4">"The website they created for us has significantly improved
+                                            our online presence. Our customer engagement has increased by 150% since the
+                                            launch."</p>
+                                        <h5>Michael Chen</h5>
+                                        <p class="text-muted">Marketing Director, Global Innovations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="text-center">
+                                        <img src="assets/images/fceo2.jpg" class="rounded-circle mb-4" alt="Client"
+                                            style="width: 64px; height: 64px; object-fit: cover;">
+                                        <p class="lead mb-4">"Their expertise in web development and design is
+                                            outstanding. They provided innovative solutions to our complex requirements
+                                            and delivered a user-friendly website."</p>
+                                        <h5>Emily Rodriguez</h5>
+                                        <p class="text-muted">Product Manager, Creative Studios</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Clients Section -->
+        <section class="clients-section py-5" id="clients">
+            <div class="container">
+                <h2 class="text-center mb-5">Our Clients</h2>
+                <div class="row g-4 justify-content-center align-items-center">
+                    <!-- Client 1 -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="client-logo text-center">
+                            <img src="assets/images/clients/client1.png" alt="Client Logo" class="img-fluid"
+                                style="max-height: 80px; width: auto;">
+                        </div>
+                    </div>
+                    <!-- Client 2 -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="client-logo text-center">
+                            <img src="assets/images/clients/client2.png" alt="Client Logo" class="img-fluid"
+                                style="max-height: 80px; width: auto;">
+                        </div>
+                    </div>
+                    <!-- Client 3 -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="client-logo text-center">
+                            <img src="assets/images/clients/client3.png" alt="Client Logo" class="img-fluid"
+                                style="max-height: 80px; width: auto;">
+                        </div>
+                    </div>
+                    <!-- Client 4 -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="client-logo text-center">
+                            <img src="assets/images/clients/client4.png" alt="Client Logo" class="img-fluid"
+                                style="max-height: 80px; width: auto;">
+                        </div>
+                    </div>
+                    <!-- Client 5 -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="client-logo text-center">
+                            <img src="assets/images/clients/client5.png" alt="Client Logo" class="img-fluid"
+                                style="max-height: 80px; width: auto;">
+                        </div>
+                    </div>
+                    <!-- Client 6 -->
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <div class="client-logo text-center">
+                            <img src="assets/images/clients/client6.png" alt="Client Logo" class="img-fluid"
+                                style="max-height: 80px; width: auto;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .client-logo {
+                    padding: 1rem;
+                    background: white;
+                    border: 1px solid #eee;
+                    border-radius: 8px;
+                    transition: transform 0.3s ease;
+                }
+
+                .client-logo:hover {
+                    transform: scale(1.05);
+                }
+            </style>
+        </section>
+    </main>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <h5 class="mb-4">About AK Developer</h5>
+                    <p>Transforming ideas into powerful digital solutions. We specialize in creating innovative web
+                        experiences that help businesses thrive in the digital world.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#hero" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="#blog" class="text-white text-decoration-none">Blog</a></li>
+                        <li class="mb-2"><a href="#testimonials"
+                                class="text-white text-decoration-none">Testimonials</a></li>
+                        <li class="mb-2"><a href="#clients" class="text-white text-decoration-none">Clients</a></li>
+                        <li class="mb-2"><a href="#faqs" class="text-white text-decoration-none">FAQs</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-code-square me-2"></i>Web Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-palette me-2"></i>UI/UX Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-phone me-2"></i>Mobile Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-graph-up me-2"></i>Digital Marketing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none"><i
+                                    class="bi bi-search me-2"></i>SEO Optimization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-geo-alt me-2"></i>
+                            Rehman plaza, Sargodha, Pakistan
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-envelope me-2"></i>
+                            <a href="mailto:contact@akdeveloper.com"
+                                class="text-white text-decoration-none">aamirjames786@gmail.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-phone me-2"></i>
+                            <a href="tel:+1234567890" class="text-white text-decoration-none">+92300-2744084</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-clock me-2"></i>
+                            Mon - Fri: 9:00 AM - 6:00 PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-top border-secondary pt-4 mt-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2024 AK Developer. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                        <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+                        <a href="#" class="text-white text-decoration-none">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle"
+        style="display: none;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Add Back to Top Button Script -->
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
+
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        function showNoMorePosts(event) {
+            event.preventDefault();
+            Swal.fire({
+                title: 'Coming Soon!',
+                text: 'We are working on more amazing content. Stay tuned for future updates!',
+                icon: 'info',
+                confirmButtonText: 'Got it!',
+                confirmButtonColor: '#0d6efd'
+            });
+        }
+    </script>
+
+</body>
+
+</html>
